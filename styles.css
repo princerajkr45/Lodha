@@ -27,21 +27,23 @@ body {
     backdrop-filter: blur(4px);
     top: 0;
     left: 0;
-    padding: 8px ; /* Ensure padding on both sides */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    padding: 8px;
+    /* Ensure padding on both sides */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
 }
 
-.container > * {
+.container>* {
     margin-left: 0;
     margin-right: 0;
 }
 
-.search_img{
+.search_img {
     height: 10px;
 }
 
-.searchLi{
-text-decoration: none;
+.searchLi {
+    text-decoration: none;
 }
 
 
@@ -126,7 +128,7 @@ text-decoration: none;
     align-items: center;
     padding: 0;
     margin: 0;
-   
+
 }
 
 .enquire,
@@ -358,8 +360,8 @@ search {
 /* Brand Section */
 .brand-section {
     text-align: center;
+    background-color: white;
     padding: 50px;
-    /* background: #f1f1f1; */
 }
 
 .brand-section p {
@@ -370,7 +372,7 @@ search {
 
 .brands {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     gap: 80px;
     background: transparent;
@@ -467,7 +469,7 @@ search {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background:transparent;
+    background: transparent;
 
     padding: 0 5px;
     font-size: 20px;
@@ -568,4 +570,3 @@ search {
 .links a:hover {
     color: #ffcc00;
 }
-
