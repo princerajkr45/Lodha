@@ -27,21 +27,28 @@ body {
     backdrop-filter: blur(4px);
     top: 0;
     left: 0;
+<<<<<<< HEAD
     padding: 8px ;
     box-sizing: border-box; 
+=======
+    padding: 8px;
+    /* Ensure padding on both sides */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+>>>>>>> 4c296a0f85cdb1b3519c6cc16230a7420a1d9e57
 }
 
-.container > * {
+.container>* {
     margin-left: 0;
     margin-right: 0;
 }
 
-.search_img{
+.search_img {
     height: 10px;
 }
 
-.searchLi{
-text-decoration: none;
+.searchLi {
+    text-decoration: none;
 }
 
 
@@ -126,7 +133,7 @@ text-decoration: none;
     align-items: center;
     padding: 0;
     margin: 0;
-   
+
 }
 .staticlinksUl a{
     text-decoration: none;
@@ -373,8 +380,8 @@ search {
 /* Brand Section */
 .brand-section {
     text-align: center;
+    background-color: white;
     padding: 50px;
-    /* background: #f1f1f1; */
 }
 
 .brand-section p {
@@ -385,7 +392,7 @@ search {
 
 .brands {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     gap: 80px;
     background: transparent;
@@ -482,7 +489,7 @@ search {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background:transparent;
+    background: transparent;
 
     padding: 0 5px;
     font-size: 20px;
@@ -583,4 +590,3 @@ search {
 .links a:hover {
     color: #ffcc00;
 }
-
