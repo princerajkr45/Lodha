@@ -27,15 +27,17 @@ body {
     backdrop-filter: blur(4px);
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 8px ; /* Ensure padding on both sides */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.container > * {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
-.mainHeader {
-    background: #fff;
-    padding: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+
 
 .row {
     display: flex;
@@ -166,7 +168,7 @@ body {
 .hero {
     height: 100vh;
     width: 100%;
-   
+
 }
 
 .hero-video {
