@@ -77,10 +77,6 @@
     </header> 
 
     
-    
-
-
-
 
     <section class="content-section">
         <div class="contentImg">
@@ -215,7 +211,73 @@
                 </div>
             </div>
         </footer>
+    <div class="divider" onclick="toggleFooter()">
         <hr>
+        <span id="toggleArrow">^</span>
+    </div>
+    
+    <div class="hidden-footer" id="footerSection">
+        <div class="hidden-container">
+            <div class="footer-columns five-columns">
+                <div class="column">
+                    <h4>Residential Properties</h4>
+                    <div class="links">
+                        <a href="#">Casa Bella</a>
+                        <a href="#">Casa Bella Gold</a>
+                        <a href="#">Casa Evergreen</a>
+                        <a href="#">Casa Foresta by Lodha</a>
+                        <a href="#">Casa Olivia</a>
+                        <a href="#">Casa Premier by Lodha</a>
+                        <a href="#">Casa Rio</a>
+                        <a href="#">Casa Rio Gold</a>
+                        <a href="#">Crown Dombivli</a>
+                        <a href="#">Crown Kolshet</a>
+                        <a href="#">Crown Taloja</a>
+                        <a href="#">Lakeshore Greens</a>
+                        <a href="#">Lodha Acenza</a>
+                        <a href="#">Lodha Adrina</a>
+                        <a href="#">Lodha Alibaug</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>More Properties</h4>
+                    <div class="links">
+                        <a href="#">Lodha Altus</a>
+                        <a href="#">Lodha Amara</a>
+                        <a href="#">Lodha Aura</a>
+                        <a href="#">Lodha Azur</a>
+                        <a href="#">Lodha Bel Air</a>
+                        <a href="#">Lodha Bella Vita</a>
+                        <a href="#">Lodha Bellagio</a>
+                        <a href="#">Lodha Bellavista</a>
+                        <a href="#">Lodha Bellevue</a>
+                        <a href="#">Lodha Bellissimo</a>
+                        <a href="#">Lodha Belmondo</a>
+                        <a href="#">Lodha Corinthia</a>
+                        <a href="#">Lodha Cullinan</a>
+                        <a href="#">Lodha Divino</a>
+                        <a href="#">Lodha Estilo</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Commercial Properties</h4>
+                    <div class="links">
+                        <a href="#">Lodha Excelus</a>
+                        <a href="#">Lodha iThink</a>
+                        <a href="#">Lodha Life Sciences</a>
+                        <a href="#">Lodha Signet Kalyan Shil Road</a>
+                        <a href="#">Lodha Signet Lower Parel</a>
+                        <a href="#">Lodha Signet Matunga</a>
+                        <a href="#">Lodha Signet Thane</a>
+                        <a href="#">Lodha Signet Vikhroli</a>
+                        <a href="#">Lodha Supremus New Cuffe Parade</a>
+                        <a href="#">Lodha Supremus Thane</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
         <div class="copyDiv">
             <p>
                 © Lodha Group 2025 All Rights Reserved.
@@ -223,9 +285,25 @@
         </div>
     </div>
     
+
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init();
+
+    function toggleFooter() {
+            var footer = document.getElementById("footerSection");
+            var arrow = document.getElementById("toggleArrow");
+
+            if (footer.style.display === "none" || footer.style.display === "") {
+                footer.style.display = "block";
+                arrow.style.transform = "translateX(-50%) rotate(180deg)";
+            } else {
+                footer.style.display = "none";
+                arrow.style.transform = "translateX(-50%) rotate(0deg)";
+            }
+        }
+
 </script>
 </body>
 
