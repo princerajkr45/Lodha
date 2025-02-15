@@ -27,15 +27,13 @@ body {
     backdrop-filter: blur(4px);
     top: 0;
     left: 0;
-<<<<<<< HEAD
-    padding: 8px ;
-    box-sizing: border-box; 
-=======
+    padding: 8px;
+    box-sizing: border-box;
     padding: 8px;
     /* Ensure padding on both sides */
     box-sizing: border-box;
     /* Include padding in the width calculation */
->>>>>>> 4c296a0f85cdb1b3519c6cc16230a7420a1d9e57
+    
 }
 
 .container>* {
@@ -43,9 +41,7 @@ body {
     margin-right: 0;
 }
 
-.search_img {
-    height: 10px;
-}
+
 
 .searchLi {
     text-decoration: none;
@@ -107,7 +103,7 @@ body {
 .linksUl a {
     text-decoration: none;
     color: #ffff;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: "Futura Bk BT";
 }
 
@@ -135,27 +131,39 @@ body {
     margin: 0;
 
 }
-.staticlinksUl a{
+
+.staticlinksUl a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
-.staticlinksUl a img{
-    width: 16px;
-    height: 17px;
+
+.search {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    /* font-weight: bold; */
+    padding: 5px 10px;
+    background: transparent;
+}
+
+.search_img {
+    width: 20px;
+    height: 20px;
     object-fit: contain;
     margin-right: 10px;
+    filter: invert(1);
 }
 
 .enquire,
 .call,
-.chat,
-search {
+.chat {
     text-decoration: none;
     color: #ffff;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 5px 10px;
-
+    
 }
 
 .enquire:hover,
@@ -253,7 +261,7 @@ search {
     display: flex;
     align-items: center;
     background: #fefbec;
-    padding-left:200px;
+    padding-left: 200px;
 }
 
 /* Story Container */
