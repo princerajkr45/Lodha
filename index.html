@@ -7,51 +7,46 @@
     <title>Website Layout</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 
 <body>
 
     <header class="mainHeader">
         <div class="container">
-            <div class="row ">
+            <div class="row">
                 <div class="logoDiv">
                     <a href="https://www.lodhagroup.com/" class="brandLogo">
-                        <img src="https://www.lodhagroup.com/themes/lodhanew/images/home/logo.webp" alt="Lodha"
-                            class="img-fluid" width="163" height="20">
+                        <img src="./STAR/Bhadra.png" alt="Bhadra"
+                            class="logo">
                     </a>
-                    <div class="mobMenu">
-                        <!-- <img src="/themes/lodhanew/images/svg/search.svg" alt="Search" class="img-fluid mobSearch"
-                                width="20" height="20">
-                             <div class="burgerMenu"> 
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div> -->
+
+                </div>
+                <div class="mobMenu">
+                    <img class="search_img" src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
+                        alt="Search">
+                    <div class="burgerMenu" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
                 <nav class="linksDiv">
                     <ul class="linksUl">
-                        <li><a href="https://www.lodhagroup.com/our-story">OUR STORY</a></li>
+                        <li><a href="./our-story.html">OUR STORY</a></li>
                         <li><a href="/esg-sustainablity-environmental-social-governance">OUR IMPACT</a></li>
                         <li class="innerMenu">
                             <a href="#">OUR PROJECTS</a>
                             <!-- <div class="innerMenuDiv">
-                                    <ul>
-                                        <li><a href="/projects/residential-property-in-worli/lodha-world-towers">Lodha World
-                                                Towers</a></li>
-                                        <li><a href="/projects/residential-property-in-andheri/lodha-cullinan">Lodha
-                                                Cullinan</a></li>
-                                        <li><a href="/projects/residential-property-in-matunga/lodha-vero">Lodha Vero</a>
-                                        </li>
-                                        <li><a href="/projects/residential-property-in-thane/lodha-sterling">Lodha
-                                                Sterling</a></li>
-                                        <li><a href="/projects/residential-property-in-dombivli/lodha-golfview">Lodha
-                                                Golfview</a></li>
-                                        <li><a href="/projects/residential-property-in-bangalore/lodha-azur">Lodha Azur</a>
-                                        </li>
-                                        <li><a href="/all-projects" class="goldenLineBtn">View all</a></li>
-                                    </ul>
-                                </div> -->
+                                <ul>
+                                    <li><a href="/projects/residential-property-in-worli/lodha-world-towers">Bhadra World
+                                            Towers</a></li>
+                                    <li><a href="/projects/residential-property-in-andheri/lodha-cullinan">Lodha
+                                            Cullinan</a></li>
+                                    <li><a href="/all-projects" class="goldenLineBtn">View all</a></li>
+                                </ul>
+                            </div> -->
                         </li>
                     </ul>
                     <ul class="staticlinksUl">
@@ -59,37 +54,54 @@
                         <li><a href="tel:022-50030226" class="call">CALL</a></li>
                         <li><a href="http://wa.me/+917718893537?text=Hi" class="chat" target="_blank">CHAT</a></li>
                         <li class="searchLi">
-                            <a class="search" href="#"><img class="search_img"
-                                    src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
-                                    alt="Search">SEARCH</a>
+                            <a class="search" href="#">
+                                <img class="search_img"
+                                    src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" alt="Search">
+                                SEARCH
+
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
-
     </header>
 
-
-    <section class="hero">
-
-        <iframe class="hero-video"
-            src="https://www.youtube.com/embed/sBfD87qRyd8?autoplay=1&loop=1&playlist=sBfD87qRyd8&controls=1&showinfo=1"
-            frameborder="0" allow="autoplay; fullscreen; encrypted-media" allowfullscreen>
+<!-- <section class="hero">
+    <div class="video-container">
+        <iframe class="hero-video" src="https://www.youtube.com/embed/suk3mW0tDPA?si=hdLSX9kRhef1TSaL"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
+    </div>
+</section> -->
 
-    </section>
+<section class="hero">
+    <div class="video-container">
+        <!-- <iframe class="hero-video"
+            src="https://www.youtube.com/embed/sBfD87qRyd8?autoplay=1&loop=1&playlist=sBfD87qRyd8&controls=1&showinfo=1"
+            allow="autoplay; fullscreen; encrypted-media" allowfullscreen>
+        </iframe> -->
+        <video muted autoplay loop playsinline>
+            <source src="./STAR/hero-video.mp4"
+                type="video/webm">
+        </video>
+    </div>
+</section>
+
+
 
     <section class="content-section">
         <div class="contentImg">
             <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-04/Our-Promise--486x289_0.jpg.webp?itok=kDEZ_DER"
-                alt="Image" data-aos="fade-right" data-aos-delay="500" data-aos-offset="100"
+                alt="Image" data-aos="fade-right" data-aos-delay="300" data-aos-offset="100"
                 data-aos-easing="ease-in-sine">
             <div class="content">
                 <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100"">OUR PROMISE</h4>
                 <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Creating the world's<br>
                     finest developments</h2>
-                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Lodha is India’s leading real
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Bhadra is India’s leading real
                         estate developer, delivering thoughtfully designed, premium properties that shape urban
                         lifestyle.</p>
                     <button class="btn" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700">Know
@@ -103,9 +115,9 @@
     <section class="story-section">
         <div class="story">
             <div class="content">
-                <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">OUR PROMISE</h4>
+                <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">OUR PURPOSE</h4>
                 <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Do good. Do well.</h2>
-                <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Lodha is committed to elevating the
+                <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Bhadra is committed to elevating the
                     living experience while
                     emphasising the importance of creating a
                     positive impact on the environment and society.
@@ -119,7 +131,7 @@
                 <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-10/4AVENUE-659-MAIN-BG-PLATE-1_FIN-min.jpg.webp?itok=3scwJUPR"
                     alt="Image" data-aos="fade-right" data-aos-delay="500" data-aos-offset="500"
                     data-aos-easing="ease-in-sine">
-                
+
             </div>
         </div>
     </section>
@@ -127,17 +139,17 @@
     <!-- Card Section -->
     <section class="card-section">
         <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">OUR PRIDE</h4>
-        <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200">Iconic Properties</p>
+        <p class="card-title" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200">Iconic Properties</p>
         <div class="cards">
             <div class="card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                 <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-09/Lodha-Altamount.jpg.webp?itok=FqnLq_7H"
-                    alt="img">
-                <p>Lodha Altamount | Altamount</p>
+                    alt="img" class="card-fluid">
+                <p>Bhadra Altamount | Altamount</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                 <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-09/World-tower.jpg.webp?itok=4POgScr1"
                     alt="img">
-                <p>Lodha World Towers | Worli</p>
+                <p>Bhadra World Towers | Worli</p>
             </div>
 
             <div class="card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
@@ -148,7 +160,7 @@
             <div class="card" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                 <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-09/Spotlight_Lodha-Bellagio.jpg.webp?itok=KhMc_ZT_"
                     alt="img">
-                <p>Lodha Bellagio | Powai</p>
+                <p>Bhadra Bellagio | Powai</p>
             </div>
         </div>
 
@@ -162,6 +174,8 @@
         <button class="btn" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">View All Projects</button>
     </section>
 
+     
+
     <section class="content-section">
         <div class="contentImg">
             <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-09/Our-Experiences_585x348.jpg.webp?itok=4kzZEMcH"
@@ -169,8 +183,7 @@
                 data-aos-easing="ease-in-sine">
             <div class="content">
                 <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">OUR EXPERIENCES</h4>
-                <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Elevating everyday living<br>
-                    finest developments</h2>
+                <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Elevating everyday living</h2>
                 <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">We craft a tapestry of experiences
                     designed to enrich your life and elevate your every day, where
                     every moment is a
@@ -184,9 +197,9 @@
     <section class="brand-section" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
         <p class="" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">OUR BRANDS</p>
         <div class="brands" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
-            <img src="https://www.lodhagroup.com/themes/lodhanew/images/home/logo.webp" alt="Brand 1">
-            <img src="https://www.lodhagroup.com/sites/default/files/2024-07/Lodha-Luxury-logo.png" alt="Brand 2">
-            <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-03/palavanew.png.webp?itok=ooEcan5Z"
+            <img src="./STAR/1.png" class="brand1" alt="Brand 1">
+            <img src="./STAR/4.png" alt="Brand 2">
+            <img src="./STAR/2.png"
                 alt="Brand 3">
         </div>
     </section>
@@ -225,7 +238,7 @@
 
             <div>
                 <a href="https://www.lodhagroup.com/" class="footer-logo">
-                    <img src="https://www.lodhagroup.com/themes/lodhanew/images/home/logo.webp" alt="Lodha">
+                    <img src="./STAR/Bhadra.jpg" alt="Bhadra">
                 </a>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/LodhaGroup/" target="_blank"><img
@@ -264,44 +277,44 @@
                             <a href="#">Crown Kolshet</a>
                             <a href="#">Crown Taloja</a>
                             <a href="#">Lakeshore Greens</a>
-                            <a href="#">Lodha Acenza</a>
-                            <a href="#">Lodha Adrina</a>
-                            <a href="#">Lodha Alibaug</a>
+                            <a href="#">BhadraAcenza</a>
+                            <a href="#">BhadraAdrina</a>
+                            <a href="#">BhadraAlibaug</a>
                         </div>
                     </div>
                     <div class="column">
                         <h4>More Properties</h4>
                         <div class="links">
-                            <a href="#">Lodha Altus</a>
-                            <a href="#">Lodha Amara</a>
-                            <a href="#">Lodha Aura</a>
-                            <a href="#">Lodha Azur</a>
-                            <a href="#">Lodha Bel Air</a>
-                            <a href="#">Lodha Bella Vita</a>
-                            <a href="#">Lodha Bellagio</a>
-                            <a href="#">Lodha Bellavista</a>
-                            <a href="#">Lodha Bellevue</a>
-                            <a href="#">Lodha Bellissimo</a>
-                            <a href="#">Lodha Belmondo</a>
-                            <a href="#">Lodha Corinthia</a>
-                            <a href="#">Lodha Cullinan</a>
-                            <a href="#">Lodha Divino</a>
-                            <a href="#">Lodha Estilo</a>
+                            <a href="#">BhadraAltus</a>
+                            <a href="#">Bhadra Amara</a>
+                            <a href="#">Bhadra Aura</a>
+                            <a href="#">Bhadra Azur</a>
+                            <a href="#">Bhadra Bel Air</a>
+                            <a href="#">Bhadra Bella Vita</a>
+                            <a href="#">Bhadra Bellagio</a>
+                            <a href="#">Bhadra Bellavista</a>
+                            <a href="#">Bhadra Bellevue</a>
+                            <a href="#">Bhadra Bellissimo</a>
+                            <a href="#">Bhadra Belmondo</a>
+                            <a href="#">Bhadra Corinthia</a>
+                            <a href="#">Bhadra Cullinan</a>
+                            <a href="#">Bhadra Divino</a>
+                            <a href="#">Bhadra Estilo</a>
                         </div>
                     </div>
                     <div class="column">
                         <h4>Commercial Properties</h4>
                         <div class="links">
-                            <a href="#">Lodha Excelus</a>
-                            <a href="#">Lodha iThink</a>
-                            <a href="#">Lodha Life Sciences</a>
-                            <a href="#">Lodha Signet Kalyan Shil Road</a>
-                            <a href="#">Lodha Signet Lower Parel</a>
-                            <a href="#">Lodha Signet Matunga</a>
-                            <a href="#">Lodha Signet Thane</a>
-                            <a href="#">Lodha Signet Vikhroli</a>
-                            <a href="#">Lodha Supremus New Cuffe Parade</a>
-                            <a href="#">Lodha Supremus Thane</a>
+                            <a href="#">Bhadra Excelus</a>
+                            <a href="#">Bhadra iThink</a>
+                            <a href="#">Bhadra Life Sciences</a>
+                            <a href="#">Bhadra Signet Kalyan Shil Road</a>
+                            <a href="#">Bhadra Signet Lower Parel</a>
+                            <a href="#">Bhadra Signet Matunga</a>
+                            <a href="#">Bhadra Signet Thane</a>
+                            <a href="#">Bhadra Signet Vikhroli</a>
+                            <a href="#">Bhadra Supremus New Cuffe Parade</a>
+                            <a href="#">Bhadra Supremus Thane</a>
                         </div>
                     </div>
                 </div>
@@ -310,7 +323,7 @@
 
         <div class="copyDiv">
             <p>
-                © Lodha Group 2025 All Rights Reserved.
+                © Bhadra Group 2025 All Rights Reserved.
             </p>
         </div>
     </div>
@@ -318,6 +331,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
+
+        // function toggleMenu() {
+        //         const nav = document.querySelector(".linksDiv");
+        //         nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+        //     }
+
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     gsap.fromTo(
+    //         ".contentImg img",
+    //         { opacity: 0, scale: 0.5 }, // Initial state
+    //         {
+    //             duration: 2,
+    //             opacity: 1,
+    //             scale: 1,
+    //             ease: "power3.out"
+    //         }
+    //     );
+    // });
 
         function toggleFooter() {
             var footer = document.getElementById("footerSection");
