@@ -972,3 +972,24 @@ body {
         text-align: center;
     }
 }
+
+
+/*  /* Image Revealing Animation /  */
+
+.content-section img {
+
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 2s ease-in-out;
+}
+
+.imgDiv img {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 2s ease-in-out;
+}
+
+img.aos-animate {
+    clip-path: inset(0 0 0 0);
+
+}
+
+

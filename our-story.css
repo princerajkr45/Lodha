@@ -288,7 +288,8 @@ p {
 
     .aboutTextDiv {
         width: 90%;
-        /* text-align: left; */
+        padding: 10px;
+        text-align: left;
     }
 
     .aboutTextDiv h2 {
@@ -494,7 +495,402 @@ p {
 
 
 /*  */
-/* Footer */
+
+
+
+/* Key Facts */
+.keyFactsSec {
+    padding: 50px 0 30px;
+    background: #f8f8f8;
+}
+
+.keyfact-container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.keyFactTextDiv {
+    text-align: center;
+}
+
+.keyContentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    position: relative;
+    width: 80%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.keyFactDiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 70px;
+    border-right: 2px solid red;
+}
+
+.numberDiv {
+    display: flex;
+    align-items: center;
+}
+
+.keyFactsSec span {
+    color: #9d7f19;
+    font-family: "Cormorant Garamond Medium";
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-right: 25px;
+}
+
+.keyFactsSec .numberDiv p {
+    margin-top: 8px;
+}
+
+.keyFactsSec p {
+    color: #9d7f19;
+    font-family: "Futura Bk BT";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+
+.keyFactsSec .locationDiv small {
+    color: #9d7f19;
+    text-align: center;
+    font-family: "Cormorant Garamond Bold";
+    font-size: 0.8rem;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.locationHide {
+    display: none;
+}
+
+.projectsDiv {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.projectsDiv ul {
+    list-style: none;
+}
+
+.keyFactsSec .projectsDiv ul li:first-child {
+    margin-top: 0;
+}
+
+.keyFactsSec .projectsDiv ul li {
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.saleText {
+    color: black;
+    font-family: "Futura Bk BT";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    opacity: 0.5;
+    margin-top: 70px !important;
+    text-align: right;
+    margin-right: 5% !important
+}
+
+/* ----------------------------------
+   🔹 RESPONSIVENESS 🔹
+---------------------------------- */
+/* Key Fact Responsive */
+@media (max-width: 1024px) {
+
+    .keyFactDiv,
+    .projectsDiv {
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+
+    .keyContentDiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .numberDiv,
+    .projectsDiv ul {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .keyFactTextDiv h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .numberDiv span,
+    .projectsDiv span {
+        font-size: 2rem;
+    }
+
+    .numberDiv p,
+    .projectsDiv p {
+        font-size: 0.9rem;
+    }
+
+    .keyContentDiv {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .keyFactDiv,
+    .projectsDiv,
+    .locationDiv {
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .keyContentDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .numberDiv {
+        order: 1;
+        width: 100%;
+    }
+
+    .projectsDiv {
+        order: 2;
+        width: 100%;
+    }
+
+    .locationDiv {
+        order: 3;
+        width: 100%;
+    }
+
+    .keyFactTextDiv h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .numberDiv span,
+    .projectsDiv span {
+        font-size: 1.8rem;
+    }
+
+    .numberDiv p,
+    .projectsDiv p {
+        font-size: 0.8rem;
+    }
+
+    .saleText {
+        order: 4;
+        text-align: center;
+        padding: 0 10px;
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+}
+
+/* Who We Are Section */
+.whoWeAreSection {
+    padding: 50px 0 30px;
+}
+
+.who-container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.WhoText {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.teamDiv {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+
+}
+
+.teamDiv .whoTextDiv {
+    width: 50%;
+    background: #fffbec;
+    padding: 35px 60px;
+    text-align: center;
+}
+
+.whoTextDiv p {
+    margin-top: 10px;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoTextDiv a {
+    margin-top: 20px;
+    /* min-width: 120px;
+    min-height: 40px; */
+    background: #fff;
+    text-align: center;
+    font-family: "Futura Bk BT";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding: 10px 40px;
+    border: 1px solid #9D7F19;
+    transition: all 0.5scubic-bezier(0.075, 0.82, 0.165, 1);
+    display: inline-flex;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+    color: #9D7F19;
+}
+
+/* Responsive Who We Are Section */
+@media (max-width: 1024px) {
+    .teamDiv {
+        gap: 30px;
+    }
+
+    .teamDiv .whoTextDiv {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .whoWeAreSection {
+        padding: 30px 0 20px;
+    }
+
+    .teamDiv {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .teamDiv .whoTextDiv {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+
+
+
+
+/* //*  Featured Section  //  */
+.featuredAwardsSec {
+    background: #F8F8F8 !important;
+    padding-bottom: 80px;
+    margin-top: 60px;
+}
+
+.featured-container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.featuredTextDiv {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.featuredAwardsImgTextDiv {
+    padding: 0px 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredImgDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.featuredText {
+    width: 50%;
+}
+
+.featuredText ul {
+    list-style: none;
+}
+
+.featuredText ul li {
+    margin-top: 20px;
+}
+
+.arrowPlainBtn {
+    color: var(--Brand-colour-1, #9D7F19);
+    text-align: center;
+    font-family: 'Cormorant Garamond Semibold';
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    display: inline-flex;
+    padding-right: 15px;
+    background: url(../media/svg/arrowLeft.svg) no-repeat center right;
+    transition: all 0.5scubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 35px;
+    text-decoration: none;
+}
+
+/* Featured Responsive  */
+
+@media (max-width: 768px) {
+    .featuredAwardsImgTextDiv {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .featuredImgDiv {
+        width: 100%;
+    }
+
+    .featuredText {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/* //  Footer // */
+
 .footer {
     background-color: #fefbec;
     padding: 20px;
@@ -761,217 +1157,20 @@ p {
     }
 }
 
+/* Image Revealing Animation */
 
-/* Key Facts */ 
-.keyFactsSec {
-    padding: 50px 0 30px;
-    background: #f8f8f8;
+.about-container img {
+
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 2s ease-in-out;
 }
 
-.keyfact-container {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
+.textImgGrid img {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 2s ease-in-out;
 }
 
-.keyFactTextDiv {
-    text-align: center;
-}
+img.aos-animate {
+    clip-path: inset(0 0 0 0);
 
-.keyContentDiv {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 45px;
-    position: relative;
-    width: 80%;
-    padding-top: 50px;
-    margin: 0 auto;
-}
-.keyFactDiv{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 70px;
-    border-right: 2px solid red;
-}
-
-.numberDiv {
-    display: flex;
-    align-items: center;
-}
-
-.keyFactsSec span {
-    color: #9d7f19;
-    font-family: "Cormorant Garamond Medium";
-    font-size: 3rem;
-    line-height: 3rem;
-    margin-right: 25px;
-}
-
-.keyFactsSec .numberDiv p {
-    margin-top: 8px;
-}
-
-.keyFactsSec p {
-    color: #9d7f19;
-    font-family: "Futura Bk BT";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.3rem;
-}
-
-
-.keyFactsSec .locationDiv small {
-    color: #9d7f19;
-    text-align: center;
-    font-family: "Cormorant Garamond Bold";
-    font-size: 0.8rem;
-    line-height: normal;
-    text-transform: uppercase;
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.locationHide{
-    display: none;
-}
-
-.projectsDiv {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
-.projectsDiv ul {
-    list-style: none;
-}
-
-.keyFactsSec .projectsDiv ul li:first-child {
-    margin-top: 0;
-}
-
-.keyFactsSec .projectsDiv ul li {
-    display: flex;
-    align-items: end;
-    margin-top: 20px;
-}
-
-.saleText{
-    color:black;
-    font-family: "Futura Bk BT";
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.3rem;
-    opacity: 0.5;
-    margin-top: 70px !important;
-    text-align: right;
-    margin-right: 5% !important
-}
-
-/* Key Fact Responsive */
-@media (max-width: 1024px) {
-    .keyFactDiv,
-    .projectsDiv{
-        width: 100%;
-        border-right: none;
-        text-align: center;
-    }
-
-    .keyContentDiv {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .numberDiv,
-    .projectsDiv ul{
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .keyFactTextDiv h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    .numberDiv span,
-    .projectsDiv span {
-        font-size: 2rem;
-    }
-
-    .numberDiv p,
-    .projectsDiv p {
-        font-size: 0.9rem;
-    }
-
-    .keyContentDiv {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .keyFactDiv,
-    .projectsDiv,
-    .locationDiv {
-        padding: 0 10px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .keyContentDiv {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .numberDiv {
-        order: 1;
-        width: 100%;
-    }
-
-    .projectsDiv {
-        order: 2;
-        width: 100%;
-    }
-
-    .locationDiv {
-        order: 3;
-        width: 100%;
-    }
-
-    .keyFactTextDiv h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .numberDiv span,
-    .projectsDiv span {
-        font-size: 1.8rem;
-    }
-
-    .numberDiv p,
-    .projectsDiv p {
-        font-size: 0.8rem;
-    }
-
-    .saleText {
-        order: 4;
-        text-align: center;
-        padding: 0 10px;
-        font-size: 0.8rem;
-        margin-top: 20px;
-    }
 }

@@ -37,16 +37,14 @@
                         <li><a href="./our-story.html">OUR STORY</a></li>
                         <li><a href="./our-impact.html">OUR IMPACT</a></li>
                         <li class="innerMenu">
-                            <a href="#">OUR PROJECTS</a>
-                            <!-- <div class="innerMenuDiv">
+                            <a href="#">OUR PROJECTS <span class="dropdown-icon">▼</span></a>
+                            <div class="innerMenuDiv">
                                 <ul>
-                                    <li><a href="/projects/residential-property-in-worli/lodha-world-towers">Bhadra World
-                                            Towers</a></li>
-                                    <li><a href="/projects/residential-property-in-andheri/lodha-cullinan">Lodha
-                                            Cullinan</a></li>
+                                    <li><a href="/projects/residential-property-in-worli/lodha-world-towers">Bhadra World Towers</a></li>
+                                    <li><a href="/projects/residential-property-in-andheri/lodha-cullinan">Lodha Cullinan</a></li>
                                     <li><a href="/all-projects" class="goldenLineBtn">View all</a></li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </li>
                     </ul>
                     <ul class="staticlinksUl">
@@ -95,8 +93,7 @@
     <section class="content-section">
         <div class="contentImg">
             <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-04/Our-Promise--486x289_0.jpg.webp?itok=kDEZ_DER"
-                alt="Image" data-aos="fade-right" data-aos-delay="300" data-aos-offset="100"
-                data-aos-easing="ease-in-sine">
+                alt="Image"  data-aos="custom-animation">
             <div class="content">
                 <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100"">OUR PROMISE</h4>
                 <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Creating the world's<br>
@@ -126,11 +123,9 @@
             </div>
             <div class="imgDiv">
                 <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-07/4AVENUE-659-MAIN-BG-PLATE-1_FIN-523x945.jpg.webp?itok=KtxPx6BU"
-                    alt=" Image" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300"
-                    data-aos-easing="ease-in-sine">
+                    alt=" Image" data-aos="custom-animation">
                 <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-10/4AVENUE-659-MAIN-BG-PLATE-1_FIN-min.jpg.webp?itok=3scwJUPR"
-                    alt="Image" data-aos="fade-right" data-aos-delay="500" data-aos-offset="500"
-                    data-aos-easing="ease-in-sine">
+                    alt="Image" data-aos="custom-animation">
 
             </div>
         </div>
@@ -174,13 +169,11 @@
         <button class="btn" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">View All Projects</button>
     </section>
 
-     
 
     <section class="content-section">
         <div class="contentImg">
             <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-09/Our-Experiences_585x348.jpg.webp?itok=4kzZEMcH"
-                alt="Image" data-aos="fade-right" data-aos-delay="900" data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+                alt="Image" data-aos="custom-animation">
             <div class="content">
                 <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">OUR EXPERIENCES</h4>
                 <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Elevating everyday living</h2>
@@ -330,25 +323,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
-
-        // function toggleMenu() {
-        //         const nav = document.querySelector(".linksDiv");
-        //         nav.style.display = nav.style.display === "flex" ? "none" : "flex";
-        //     }
-
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     gsap.fromTo(
-    //         ".contentImg img",
-    //         { opacity: 0, scale: 0.5 }, // Initial state
-    //         {
-    //             duration: 2,
-    //             opacity: 1,
-    //             scale: 1,
-    //             ease: "power3.out"
-    //         }
-    //     );
-    // });
+        AOS.init({
+                duration: 1500,
+                once: false,
+            });
 
         function toggleFooter() {
             var footer = document.getElementById("footerSection");

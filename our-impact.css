@@ -336,6 +336,11 @@ a {
     border: 1px solid #9D7F19;
 }
 
+.socialImpactSec {
+    background-color: #fefbec;
+    padding-top: 20px;
+}
+
 /* // Impact Section Responsive // */
 
 @media (max-width: 1024px) {
@@ -369,6 +374,487 @@ a {
     }
 
     .itemBtn {
+        text-align: center;
+    }
+}
+
+/*  */
+.recognitionSec , .partnershipSec {
+    padding: 80px 0px;
+}
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.swiper-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    background: #fff;
+    padding: 15px;
+    margin: 0 auto;
+}
+.partnershipSwiper-container{
+    position: relative;
+    width: 70%;
+    max-width: 1200px;
+    overflow: hidden;
+    background: #fff;
+    padding: 15px;
+    margin: 0 auto;
+}
+.swiper-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
+}
+
+.swiper-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.swiper-item {
+    min-width: 280px;
+    padding: 20px;
+    border-left: #9D7F19 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.swiper-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0;
+}
+
+.actionBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 26px;
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-btn::before {
+    content: '<';
+    width: 2px;
+    height: 2px;
+    transition: transform 0.3s;
+}
+
+.right-btn::before {
+    content: '>';
+    width: 10px;
+    height: 2px;
+    transition: transform 0.3s;
+}
+
+
+/* Recognition Responsive */
+
+@media (max-width: 768px) {
+    .swiper-container {
+        width: 90%;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        padding-bottom: 0;
+        scroll-snap-type: x mandatory;
+    }
+
+    .swiper-item {
+        min-width: 100%;
+        padding: 15px;
+        scroll-snap-align: start;
+    }
+
+    .swiper-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+}
+/*  /* Recongnition Section /  */
+
+
+
+/* .recognition-section {
+    padding: 80px 0px;
+}
+
+.recognition-container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    border: #000 solid;
+}
+
+.boderedCardDiv {
+    border-left: 0.5px solid #9D7F19;
+    padding: 0 40px;
+    flex: 0 0 25%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.bodredCardGridDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    position: relative;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.swiper-button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 26px;
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.swiper-button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+} */
+
+/* @media (max-width: 768px) {
+    .boderedCardDiv {
+        flex: 0 0 100%;
+    }
+} 
+
+@media (min-width: 1024px) {
+    .boderedCardDiv {
+        flex: 0 0 calc(100% /35);
+    }
+} */
+
+
+
+/* //................. Footer .........................//*/
+
+.footer {
+    background-color: #fefbec;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer div {
+    margin: 10px;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: left;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #8f8e84;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-logo img {
+    width: 250px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Copyright Section */
+.copyDiv {
+    text-align: center;
+    color: #8f8e84;
+    padding-bottom: 10px;
+    font-size: 14px;
+    background-color: #fefbec;
+}
+
+.copyDiv p {
+    padding-top: 10px;
+    color: #8f8e84;
+}
+
+/* Divider */
+.divider {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.divider hr {
+    border: none;
+    border-top: 1px solid black;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.divider span {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Hidden Footer */
+.hidden-footer {
+    display: none;
+    background-color: #fefbec;
+    padding: 20px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.hidden-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Column Layout */
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #8f8e84;
+    margin: 5px 0;
+}
+
+.open .hidden-footer {
+    display: block;
+}
+
+.open .divider span {
+    transform: translateX(-50%) rotate(180deg);
+}
+
+/* Hidden Footer */
+.hidden-footer {
+    padding: 40px 0;
+    color: #8f8e84;
+}
+
+.hidden-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Responsive Column Width */
+.five-columns .column {
+    width: 18%;
+}
+
+.four-columns .column {
+    width: 24%;
+}
+
+.column h4 {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.links a {
+    text-decoration: none;
+    text-align: left;
+    color: #8f8e84;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: #ffcc00;
+}
+
+/* ----------------------------------
+   🔹 RESPONSIVENESS 🔹
+---------------------------------- */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-logo img {
+        width: 200px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .column {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .footer-links {
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-logo img {
+        width: 180px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .column {
         text-align: center;
     }
 }
