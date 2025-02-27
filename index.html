@@ -18,8 +18,7 @@
             <div class="row">
                 <div class="logoDiv">
                     <a href="https://www.lodhagroup.com/" class="brandLogo">
-                        <img src="./STAR/Bhadra.png" alt="Bhadra"
-                            class="logo">
+                        <img src="./STAR/Bhadra.png" alt="Bhadra" class="logo">
                     </a>
 
                 </div>
@@ -37,18 +36,14 @@
                         <li><a href="./our-story.html">OUR STORY</a></li>
                         <li><a href="./our-impact.html">OUR IMPACT</a></li>
                         <li class="innerMenu">
-                            <a href="#">OUR PROJECTS <span class="dropdown-icon">▼</span></a>
-                            <div class="innerMenuDiv">
-                                <ul>
-                                    <li><a href="/projects/residential-property-in-worli/lodha-world-towers">Bhadra World Towers</a></li>
-                                    <li><a href="/projects/residential-property-in-andheri/lodha-cullinan">Lodha Cullinan</a></li>
-                                    <li><a href="/all-projects" class="goldenLineBtn">View all</a></li>
-                                </ul>
-                            </div>
+                            <a href="#" onclick="toggleDropdown(event)">OUR PROJECTS <span class="dropdown-icon"
+                                    onclick="toggleDropdown(event)">▼</span></a>
+
                         </li>
+
                     </ul>
                     <ul class="staticlinksUl">
-                        <li><a href="#" class="enquire">ENQUIRE</a></li>
+                        <li><a href="#" class="enquire" id="openModal">ENQUIRE</a></li>
                         <li><a href="tel:022-50030226" class="call">CALL</a></li>
                         <li><a href="http://wa.me/+917718893537?text=Hi" class="chat" target="_blank">CHAT</a></li>
                         <li class="searchLi">
@@ -65,7 +60,7 @@
         </div>
     </header>
 
-<!-- <section class="hero">
+    <!-- <section class="hero">
     <div class="video-container">
         <iframe class="hero-video" src="https://www.youtube.com/embed/suk3mW0tDPA?si=hdLSX9kRhef1TSaL"
             title="YouTube video player" frameborder="0"
@@ -75,28 +70,27 @@
     </div>
 </section> -->
 
-<section class="hero">
-    <div class="video-container">
-        <!-- <iframe class="hero-video"
+    <section class="hero">
+        <div class="video-container">
+            <!-- <iframe class="hero-video"
             src="https://www.youtube.com/embed/sBfD87qRyd8?autoplay=1&loop=1&playlist=sBfD87qRyd8&controls=1&showinfo=1"
             allow="autoplay; fullscreen; encrypted-media" allowfullscreen>
         </iframe> -->
-        <video muted autoplay loop playsinline>
-            <source src="./STAR/hero-video.mp4"
-                type="video/webm">
-        </video>
-    </div>
-</section>
+            <video muted autoplay loop playsinline>
+                <source src="./STAR/hero-video.mp4" type="video/webm">
+            </video>
+        </div>
+    </section>
 
 
 
     <section class="content-section">
         <div class="contentImg">
             <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-04/Our-Promise--486x289_0.jpg.webp?itok=kDEZ_DER"
-                alt="Image"  data-aos="custom-animation">
+                alt="Image" data-aos="custom-animation">
             <div class="content">
                 <h4 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100"">OUR PROMISE</h4>
-                <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Creating the world's<br>
+                <h2 data-aos=" fade-up" data-aos-duration="3000" data-aos-delay="300">Creating the world's<br>
                     finest developments</h2>
                     <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Bhadra is India’s leading real
                         estate developer, delivering thoughtfully designed, premium properties that shape urban
@@ -190,10 +184,9 @@
     <section class="brand-section" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
         <p class="" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">OUR BRANDS</p>
         <div class="brands" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
-            <img src="./STAR/1.png" class="brand1" alt="Brand 1">
+            <a href="https://elysium.givnidigital.com/"> <img src="./STAR/1.png" class="brand1" alt="Brand 1"></a>
             <img src="./STAR/4.png" alt="Brand 2">
-            <img src="./STAR/2.png"
-                alt="Brand 3">
+            <img src="./STAR/2.png" alt="Brand 3">
         </div>
     </section>
 
@@ -321,12 +314,89 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal Form -->
+    <!-- Modal (Initially Hidden) -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Request a call back</h2>
+
+        <form id="callbackForm">
+            <div class="formDiv">
+                <input type="text" id="name" placeholder="Name*" required>
+                <input type="email" id="email" placeholder="E-Mail ID*" required>
+
+                <select id="country" required>
+                    <option value="India" selected>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                </select>
+
+                <select id="city" required>
+                    <option value="Mumbai" selected>Mumbai</option>
+                    <option>Delhi</option>
+                    <option>Bangalore</option>
+                    <option>Kolkata</option>
+                </select>
+
+                <div class="phone-container">
+                    <input type="tel" id="phone" placeholder="+91 Enter Mobile Number*" required>
+                </div>
+
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree" required>
+                <p for="agree">
+                    By checking this box, you agree to our <a href="#">Privacy Policy</a> and consent to be
+                    contacted with relevant updates.
+                </p>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({
-                duration: 1500,
-                once: false,
-            });
+            duration: 1500,
+            once: false,
+        });
+
+        function toggleDropdown(event) {
+            event.stopPropagation();
+            var innerMenu = document.querySelector(".innerMenu");
+            innerMenu.classList.toggle("active");
+            console.log(innerMenu.classList)
+            console.log("innerMenu")
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function (event) {
+            var innerMenu = document.querySelector(".innerMenu");
+            if (!innerMenu.contains(event.target) && !event.target.closest(".innerMenu > a")) {
+                innerMenu.classList.remove("active");
+            }
+        });
+
+
+
 
         function toggleFooter() {
             var footer = document.getElementById("footerSection");
@@ -340,6 +410,41 @@
                 arrow.style.transform = "translateX(-50%) rotate(0deg)";
             }
         }
+
+
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("myModal");
+            const openModalBtn = document.getElementById("openModal");
+            const closeModalBtn = document.querySelector(".close");
+
+            // Ensure modal is hidden when the page loads
+            modal.style.display = "none";
+
+            // Open Modal on "Enquire" Button Click
+            if (openModalBtn) {
+                openModalBtn.addEventListener("click", function () {
+                    modal.style.display = "flex";
+                });
+            }
+
+            // Close Modal on Close Button Click
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+            }
+
+            // Close Modal When Clicking Outside Content
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+
+
 
     </script>
 </body>
