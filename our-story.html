@@ -14,10 +14,10 @@
         <div class="container">
             <div class="row">
                 <div class="logoDiv">
-                    <a href="https://www.lodhagroup.com/" class="brandLogo">
+                    <a href="index.html" class="brandLogo">
                         <img src="./STAR/Bhadra.png" alt="Bhadra" class="logo">
                     </a>
-
+    
                 </div>
                 <div class="mobMenu">
                     <img class="search_img" src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
@@ -33,28 +33,167 @@
                         <li><a href="./our-story.html">OUR STORY</a></li>
                         <li><a href="./our-impact.html">OUR IMPACT</a></li>
                         <li class="innerMenu">
-                            <a href="#">OUR PROJECTS</a>
-                            <!-- <div class="innerMenuDiv">
-                                    <ul>
-                                        <li><a href="/projects/residential-property-in-worli/lodha-world-towers">Bhadra World
-                                                Towers</a></li>
-                                        <li><a href="/projects/residential-property-in-andheri/lodha-cullinan">Lodha
-                                                Cullinan</a></li>
-                                        <li><a href="/all-projects" class="goldenLineBtn">View all</a></li>
-                                    </ul>
-                                </div> -->
+                            <a href="#" onclick="toggleDropdown(event)">OUR PROJECTS <span class="dropdown-icon"
+                                    onclick="toggleDropdown(event)">▼</span></a>
+                            <div class="innerMenuDiv">
+                                <div class="innerLinksList">
+                                    <div class="linksListWithSearch">
+                                        <div class="">
+                                            <!-- <img src="themes/lodhanew/images/svg/close.svg" alt="Closed"
+                                                    class="img-fluid closedMenu"> -->
+                                            <div class="innerListDiv">
+                                                <!-- Residential Links -->
+                                                <div class="innerLinksUl">
+                                                    <h6>Residential</h6>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-worli/lodha-world-towers.html"
+                                                                data-location="Mumbai" data-category="Residential"
+                                                                data-typology="3 Beds, 4 Beds" data-city="Mumbai"
+                                                                data-title="Lodha World Towers"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_274X342.jpg"
+                                                                data-projectid="a09D000000k1Cj0"
+                                                                data-possesion="Ready To Move In">
+                                                                Lodha World Towers
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-andheri/lodha-cullinan.html"
+                                                                data-location="Mumbai" data-category="Residential"
+                                                                data-title="Lodha Cullinan"
+                                                                data-img="/sites/default/files/thumbnail/VSV-V01-Pool-HR-5_274x342.png"
+                                                                data-projectid="a09P3000001iMPFIA2"
+                                                                data-possesion="Under Construction">
+                                                                Lodha Cullinan
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-matunga/lodha-vero.html"
+                                                                data-location="Mumbai" data-category="Residential"
+                                                                data-typology="3 Beds, 4 Beds" data-city="Mumbai"
+                                                                data-title="Lodha Vero"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_Lodha-Vero_274x342.png"
+                                                                data-projectid="a094G00003D9sFH"
+                                                                data-possesion="Under Construction">
+                                                                Lodha Vero
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-thane/lodha-sterling.html"
+                                                                data-location="Thane" data-category="Residential"
+                                                                data-typology="2 Beds, 3 Beds, 4 Beds" data-city="Thane"
+                                                                data-title="Lodha Sterling"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_LodhaSterling_274x342.png"
+                                                                data-projectid="a09D000002Jv0jC"
+                                                                data-possesion="Ready To Move In">
+                                                                Lodha Sterling
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="projects/residential-property-in-dombivli/lodha-golfview.html">
+                                                                Lodha Golfview
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-bangalore/lodha-azur.html"
+                                                                data-location="Bangalore" data-category="Residential"
+                                                                data-typology="3 Beds, 4 Beds" data-city="Bangalore"
+                                                                data-title="Lodha Azur"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_Lodha-Azur_274x342.jpg"
+                                                                data-projectid="a09P3000002D75l">
+                                                                Lodha Azur
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="all-projects.html"
+                                                                class="goldenLineBtn hoverWhite mt-1 noBeforeAfter"
+                                                                data-more="View all" data-cat="Residential"
+                                                                onclick="ourprojectclick()">
+                                                                View all
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+    
+                                                <!-- Commercial Links -->
+                                                <div class="innerLinksUl">
+                                                    <h6>Commercial</h6>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="commercial-offices.html">
+                                                                Offices
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="commercial-retail.html">
+                                                                Retail
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.lodhaindustrialandlogisticspark.com/"
+                                                                target="_blank">
+                                                                Warehousing
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.lodhaindustrialandlogisticspark.com/"
+                                                                target="_blank">
+                                                                Plots
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="commercial.html"
+                                                                class="goldenLineBtn hoverWhite mt-1 noBeforeAfter"
+                                                                data-more="View all" data-cat="Commercial"
+                                                                onclick="commercialviewallclick()">
+                                                                View all
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+    
+                                                <!-- Search Section -->
+                                                <div class="innerSearchDiv">
+                                                    <div class="searchDiv">
+                                                        <input type="text" placeholder="Search a project name or location"
+                                                            class="plsearch">
+                                                        <div class="searchButtonDiv">
+                                                            <!-- <img src="themes/lodhanew/images/svg/close.svg" alt="Search"
+                                                                    class="img-fluid closedBtn">
+                                                                <img src="themes/lodhanew/images/svg/search.svg"
+                                                                    alt="Search" class="img-fluid searchBtn"> -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="serachAutofillDiv inner-search-result">
+                                                            <div class="swiper scrollVerticalSlider">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide" id="searchwres">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
                         </li>
+    
                     </ul>
                     <ul class="staticlinksUl">
-                        <li><a href="#" class="enquire">ENQUIRE</a></li>
-                        <li><a href="tel:022-50030226" class="call">CALL</a></li>
-                        <li><a href="http://wa.me/+917718893537?text=Hi" class="chat" target="_blank">CHAT</a></li>
+                        <li><a href="#" class="enquire" id="openModal">ENQUIRE</a></li>
+                        <li><a href="http://wa.me/+917718893537?text=Hi" id="chatButton" class="chat"
+                                target="_blank">CHAT</a></li>
                         <li class="searchLi">
                             <a class="search" href="#">
                                 <img class="search_img"
                                     src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" alt="Search">
                                 SEARCH
-
+    
                             </a>
                         </li>
                     </ul>
@@ -67,7 +206,7 @@
 
     <section class="c">
         <div class="img-container">
-            <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-04/about-us-spotlight-1903x800.jpg.webp?itok=jWNvZWrQ"
+            <img src="./assets/img11.jpg"
                 alt="our-story-image">
         </div>
     </section>
@@ -77,19 +216,15 @@
     <section class="about-section">
         <div class="about-container">
             <div class="contentImg">
-                <img src="https://www.lodhagroup.com/sites/default/files/2024-04/About-Lodha_585X347.jpg" alt="Image"
+                <img src="./assets/img18.png" alt="Image"
                     data-aos="custom-animation">
             </div>
             <div class="aboutTextDiv">
                 <h4 class="tagline" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100"">About Bhadra</h4>
-                <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Shaping Indian
-                    real estate</h2>
-                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">As creators of the world’s
-                        finest developments, Lodha leverages four decades of experience to transform the way people
-                        live and work. We combine this with the expertise to deliver both quality and scale at a
-                        pace
-                        that is unmatched in the
-                        industry.</p>
+                <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Redefining Indian Real Estate</h2>
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">With a commitment to excellence, Bhadra is reshaping the landscape of Indian real estate by blending innovation,
+                    quality, and sustainability. Backed by years of expertise, we craft spaces that elevate the way people live and work,
+                    ensuring world-class standards while delivering projects with efficiency and precision.</p>
 
             </div>
 
@@ -104,25 +239,22 @@
             <div class="ourPromiseRow">
                 <div class="    ourPromiseTextDiv">
                     <h3>OUR STORY</h3>
-                    <h2 class="headingH1">Raising expectations for real estate</h2>
+                    <h2 class="headingH1">Elevating Real Estate with Vision and Excellence</h2>
                 </div>
             </div>
 
             <div class="textImgGrid">
                 <div class="textImgDiv">
                     <div class="imgDiv">
-                        <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-04/A-Legacy-of-Excellence-527x468.jpg.webp?itok=pGHNEC-L"
+                        <img src="./assets/1 - Copy.png"
                             alt="Legacy of Excellence" data-aos="custom-animation">
                     </div>
                     <div class="textDiv">
                         <div class="promiseTextDiv">
-                            <h2 class="headingH1">A legacy of excellence</h2>
-                            <p class="expandContent">At Lodha, our legacy of excellence is forged by the pioneering
-                                spirit of our esteemed
-                                team, the partnerships we
-                                cultivate with world-class collaborators, and the dynamic processes that consistently
-                                propel us beyond conventional
-                                boundaries.</p>
+                            <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">A legacy of excellence</h2>
+                            <p class="expandContent" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">At Bhadra, we are redefining real estate through a blend of innovation, craftsmanship, and forward-thinking design. Our
+                            journey is built on a foundation of expertise, collaboration, and a relentless pursuit of excellence that pushes the
+                            boundaries of what’s possible.</p>
                         </div>
                     </div>
                 </div>
@@ -130,17 +262,14 @@
                 <div class="textImgDivRev">
                     <div class="textDiv">
                         <div class="promiseTextDiv">
-                            <h2 class="headingH1">Crafting timeless elegance</h2>
-                            <p class="expandContent">We hold an unwavering belief that quality is not just a
-                                destination, but an ongoing voyage. Each residence we create is
-                                meticulously crafted with the same attention to detail as if it were our very own. At
-                                Lodha, we nurture a culture of
-                                quality, employing innovative technologies and hand-selecting only the most exquisite
-                                materials.</p>
+                            <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Timeless Craftsmanship</h2>
+                            <p class="expandContent" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">We believe that quality is not just an achievement but a continuous journey. Every space we create is designed with
+                            meticulous attention to detail, ensuring a perfect balance of aesthetics, functionality, and durability. Our commitment
+                            to superior materials and advanced construction techniques guarantees an enduring legacy of excellence.</p>
                         </div>
                     </div>
                     <div class="imgDiv">
-                        <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-05/Living-Room-2---527-%C3%97-468.jpg.webp?itok=_O-UTpfJ"
+                        <img src="./assets/2 - Copy.png"
                             alt="Legacy of Excellence" data-aos="custom-animation">
                     </div>
 
@@ -148,15 +277,15 @@
 
                 <div class="textImgDiv">
                     <div class="imgDiv">
-                        <img src="https://www.lodhagroup.com/sites/default/files/2024-04/Our-Story-3rd_527X468.jpg"
+                        <img src="./assets/3 - Copy.png"
                             alt="Legacy of Excellence" data-aos="custom-animation">
                     </div>
                     <div class="textDiv">
                         <div class="promiseTextDiv">
-                            <h2 class="headingH1">Sophistication on a grand scale</h2>
-                            <p class="expandContent">Lodha crafts both residential and commercial real estate
-                                developments, catering to a discerning spectrum of lifestyle
-                                preferences, across several geographies.</p>
+                            <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Creating Landmark Developments</h2>
+                            <p class="expandContent" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Bhadra develops both residential and commercial spaces that cater to diverse lifestyles and aspirations. With an eye for
+                            sophistication and a passion for innovation, we shape vibrant communities across multiple locations, offering homes and
+                            workspaces that reflect elegance and modernity.</p>
                         </div>
                     </div>
                 </div>
@@ -164,13 +293,10 @@
                 <div class="textImgDivRev">
                     <div class="textDiv">
                         <div class="promiseTextDiv">
-                            <h2 class="headingH1">Building a sustainable legacy</h2>
-                            <p class="expandContent">Our commitment extends beyond the realm of luxury living. We are
-                                dedicated to leaving a lasting, positive impact on the
-                                environment and society at large. Through innovative design and sustainable practices,
-                                we are minimising our carbon
-                                footprint and creating residences that stand resilient in the face of future challenges
-                                posed by climate change.</p>
+                            <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">A Sustainable Future</h2>
+                            <p class="expandContent" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Beyond luxury and design, our vision extends to responsible development. We integrate eco-friendly practices,
+                            energy-efficient technologies, and sustainable materials to minimize our environmental footprint. At Bhadra, we are not
+                            just building for today—we are creating a legacy that will stand strong for generations to come.</p>
                         </div>
                     </div>
                     <div class="imgDiv">
@@ -191,8 +317,8 @@
     <section class="keyFactsSec">
         <div class="keyfact-container">
             <div class="keyFactTextDiv">
-                <h3 class="tagline">KEY FACTS</h3>
-                <h2 class="headingH1">Delivering excellence with continued growth</h2>
+                <h3 class="tagline" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">KEY FACTS</h3>
+                <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Delivering excellence with continued growth</h2>
             </div>
 
             <div class="keyContentDiv">
@@ -239,21 +365,21 @@
     <section class="whoWeAreSec">
         <div class="who-container">
             <div class="WhoText">
-                    <h3 class="tagline">WHO WE ARE</h3>
-                    <h2 class="headingH1">Guided by visionary leadership</h2>
+                    <h3 class="tagline" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">WHO WE ARE</h3>
+                    <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Guided by visionary leadership</h2>
                 
             </div>
             <div class="teamDiv">
                 <div class="whoTextDiv">
-                    <h2 class="headingH1">Board of Directors</h2>
-                    <p>Experienced industry leaders ensure we are growing our positive impact as we grow our business.</p>
+                    <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Board of Directors</h2>
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">Experienced industry leaders ensure we are growing our positive impact as we grow our business.</p>
                     <div>
                         <a href="/investor/board-of-directors" >View</a>
                     </div>
                 </div>
                 <div class="whoTextDiv">
-                    <h2 class="headingH1">Leadership Team</h2>
-                    <p>A motivated and passionate team with an unwavering commitment to excellence.</p>
+                    <h2 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Leadership Team</h2>
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">A motivated and passionate team with an unwavering commitment to excellence.</p>
                     <div>
                         <a href="/leadership">View</a>
                     </div>
@@ -320,7 +446,7 @@
                         </li>
                     </ul>
                     <div data-aos="fade-up" data-aos-delay="800" class="aos-init">
-                        <a href="/awards " class="arrowPlainBtn">
+                        <a href=" " class="arrowPlainBtn">
                             View All
                         </a>
                     </div>
@@ -337,44 +463,44 @@
                     <ul>
                         <li><a href="./our-story.html">Our Story</a></li>
                         <li><a href="./our-impact.html">Our Impact</a></li>
-                        <li><a href="/hr/why-lodha">Careers</a></li>
-                        <li><a href="/investor-relations">Investor Relations</a></li>
-                        <li><a href="/all-projects">All Projects</a></li>
-                        <li><a href="https://grievances.lodhagroup.com/">Grievances Portal</a></li>
-                        <li><a href="/sites/default/files/2024-09/SEBI-Circular-on-Online-Dispute-Resolution.pdf"
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li><a href="">All Projects</a></li>
+                        <li><a href="">Grievances Portal</a></li>
+                        <li><a href=""
                                 target="_blank">SEBI
                                 Circular</a></li>
-                        <li><a href="/sites/default/files/" target="_blank">Resolution</a></li>
+                        <li><a href="" target="_blank">Resolution</a></li>
                     </ul>
                 </div>
                 <div class="links">
                     <ul>
-                        <li><a href="/commercial">Commercial</a></li>
-                        <li><a href="/nri">NRI</a></li>
-                        <li><a href="/brand-experience">Brand Experience</a></li>
-                        <li><a href="/blogs">Blogs</a></li>
-                        <li><a href="/newsroom">Newsroom</a></li>
-                        <li><a href="/contact-us">Contact Us</a></li>
-                        <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
-                        <li><a href="https://smartodr.in/login" target="_blank">SMART ODR</a></li>
+                        <li><a href="">Commercial</a></li>
+                        <li><a href="/">NRI</a></li>
+                        <li><a href="">Brand Experience</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="" target="_blank">SMART ODR</a></li>
                     </ul>
                 </div>
             </div>
 
             <div>
-                <a href="https://www.lodhagroup.com/" class="footer-logo">
+                <a href="/index.html" class="footer-logo">
                     <img src="./STAR/Bhadra.jpg" alt="Bhadra">
                 </a>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/LodhaGroup/" target="_blank"><img
+                    <a href="https://www.facebook.com/" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/facebook.svg" alt="Facebook"></a>
-                    <a href="https://twitter.com/LODHA" target="_blank"><img
+                    <a href="https://twitter.com" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/twitter.svg" alt="Twitter"></a>
-                    <a href="https://www.instagram.com/lodhagroup_india/" target="_blank"><img
+                    <a href="https://www.instagram.com" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/insta.svg" alt="Instagram"></a>
-                    <a href="https://in.linkedin.com/company/lodha-group" target="_blank"><img
+                    <a href="https://in.linkedin.com/company" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/in.svg" alt="LinkedIn"></a>
-                    <a href="https://www.youtube.com/thelodhagroup" target="_blank"><img
+                    <a href="https://www.youtube.com/" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/youtube.svg" alt="YouTube"></a>
                 </div>
             </div>
@@ -454,6 +580,53 @@
     </div>
 
 
+    <!-- Modal Form -->
+    <!-- Modal (Initially Hidden) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Request a call back</h2>
+    
+            <form id="callbackForm">
+                <div class="formDiv">
+                    <input type="text" id="name" placeholder="Name*" required>
+                    <input type="email" id="email" placeholder="E-Mail ID*" required>
+    
+                    <select id="country" required>
+                        <option value="India" selected>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                    </select>
+    
+                    <select id="city" required>
+                        <option value="Mumbai" selected>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Kolkata</option>
+                    </select>
+    
+                    <div class="phone-container">
+                        <input type="tel" id="phone" placeholder="+91 Enter Mobile Number*" required>
+                    </div>
+    
+                </div>
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agree" required>
+                    <p for="agree">
+                        By checking this box, you agree to our <a href="#">Privacy Policy</a> and consent to be
+                        contacted with relevant updates.
+                    </p>
+                </div>
+    
+                <div class="submit-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- JavaScript Here -->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -462,6 +635,67 @@
             once: false,
         });
 
+    function toggleDropdown(event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        const menuItem = event.target.closest(".innerMenu");
+        const dropdown = menuItem.querySelector(".innerMenuDiv");
+        const icon = menuItem.querySelector(".dropdown-icon");
+
+        // Close any other open dropdowns
+        document.querySelectorAll(".innerMenuDiv").forEach((menu) => {
+            if (menu !== dropdown) {
+                menu.classList.remove("dropdownActive");
+                menu.closest(".innerMenu").querySelector(".dropdown-icon").classList.remove("rotate");
+            }
+        });
+
+        // Toggle the clicked dropdown
+        dropdown.classList.toggle("dropdownActive");
+        icon.classList.toggle("rotate");
+    }
+
+
+
+    // Close dropdown when clicking outside
+    // document.addEventListener("click", function (event) {
+    //     var innerMenu = document.querySelector(".innerMenu");
+    //     if (!innerMenu.contains(event.target) && !event.target.closest(".innerMenu > a")) {
+    //         innerMenu.classList.remove("active");
+    //     }
+    // });
+
+         // Modal form javascript
+
+            document.addEventListener("DOMContentLoaded", function () {
+                    const modal = document.getElementById("myModal");
+                    const openModalBtn = document.getElementById("openModal");
+                    const closeModalBtn = document.querySelector(".close");
+
+                    // Ensure modal is hidden when the page loads
+                    modal.style.display = "none";
+
+                    // Open Modal on "Enquire" Button Click
+                    if (openModalBtn) {
+                        openModalBtn.addEventListener("click", function () {
+                            modal.style.display = "flex";
+                        });
+                    }
+
+                    // Close Modal on Close Button Click
+                    if (closeModalBtn) {
+                        closeModalBtn.addEventListener("click", function () {
+                            modal.style.display = "none";
+                        });
+                    }
+
+                    // Close Modal When Clicking Outside Content
+                    window.addEventListener("click", function (event) {
+                        if (event.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+                });
     </script>
 </body>
 

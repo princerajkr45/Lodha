@@ -52,12 +52,13 @@ body {
     display: flex;
     align-items: center;
     padding-right: 20px;
+    z-index: 1500;
 }
 
 .linksDiv {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: end;
+    justify-content: start; */
     gap: 300px;
 
 }
@@ -85,30 +86,43 @@ body {
 
 /* // Inner Menu div styling  // */
 .innerMenuDiv {
+    display: none !important;
     position: fixed;
-    top: 150;
+    top: 80px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent dark background */
+    /* background: rgba(0, 0, 0, 0.7); */
     backdrop-filter: blur(5px);
-    /* Blurred effect */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* z-index: 1200; */
 }
 
 .innerLinksList {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     color: white;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.innerListDiv {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
 }
 
 .innerLinksUl {
     flex: 1;
     min-width: 200px;
+    /* padding: 100px 0 0 100px; */
 }
 
 .innerLinksUl h6 {
@@ -127,9 +141,13 @@ body {
 }
 
 .innerLinksUl ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    color: #D0D0D0;
+    font-family: "Futura Bk BT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 18px;
     transition: color 0.3s ease;
 }
 
@@ -193,16 +211,27 @@ body {
 }
 
 /* Dropdown Icon */
-.dropdown-icon{
+.dropdown-icon {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     padding-left: 3px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.innerMenu.active .innerMenuDiv {
-    display: block;
+/* When dropdownActive, show dropdown */
+.innerMenuDiv.dropdownActive {
+    display: block !important;
+}
+
+/* Rotate dropdown icon */
+.dropdown-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+    transform: rotate(180deg);
 }
 
 
@@ -259,7 +288,7 @@ body {
     color: #fff;
 }
 
-.logo{
+.logo {
     width: 100%;
     height: auto;
 }
@@ -270,6 +299,7 @@ body {
     display: none;
     align-items: center;
     gap: 10px;
+    /* z-index: 1500; */
 }
 
 .burgerMenu {
@@ -287,6 +317,7 @@ body {
 
 }
 
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .linksDiv {
@@ -295,22 +326,105 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .linksDiv {
-        display: none;
-    }
-
     .row {
         justify-content: space-between;
+    }
+
+    .linksDiv {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        /* padding: 80px 10px 0 10px; */
+        z-index: 100;
+        font-size: 14px;
+    }
+
+    .linksDiv.active {
+        display: flex;
+    }
+
+    .linksUl {
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+        padding: 80px 10px 0 10px;
+    }
+
+    .linksUl li {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .linksUl a {
+        font-size: 18px;
+        color: white;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .staticlinksUl {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 10px;
+    }
+
+    .staticlinksUl a {
+        font-size: 16px;
+        color: white;
+        display: flex;
         align-items: center;
-        padding: 10px;
+        gap: 5px;
     }
 
-    .mobMenu {
-        display: flex !important;
-
+    .mobMenu,
+    .logoDiv {
+        display: flex;
+        z-index: 1000;
     }
 
+    .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1100;
+    }
+
+    .burgerMenu span {
+        width: 25px;
+        height: 3px;
+        background: #000;
+        filter: invert(1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Transform Burger Menu into Cross (X) when Active */
+    .burgerMenu.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burgerMenu.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burgerMenu.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
+
 
 
 /* Hero Section */
@@ -775,8 +889,8 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.brand1{
-    width:180px;
+.brand1 {
+    width: 180px;
 }
 
 .brands img:hover {
@@ -1106,46 +1220,7 @@ img.aos-animate {
 
 
 
-
-
-
-
 /* Modal Styling */
-/* .modal {
-    display: none;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: white;
-    padding: 20px;
-    width: 400px;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-} */
-
-
-
-/* Button to Open Modal */
-
-
 /* Modal Background */
 .modal {
     display: none;
@@ -1194,7 +1269,7 @@ img.aos-animate {
 }
 
 /* Heading */
-h2 {
+.modal h2 {
     color: #9D7F19;
     text-align: center;
     margin-bottom: 10px;
@@ -1204,7 +1279,7 @@ h2 {
     font-weight: 100;
 }
 
-p {
+.modal p {
     color: #6D6E70;
     font-family: "Futura Bk BT";
     font-size: 0.875rem;
@@ -1266,7 +1341,7 @@ select {
     margin-top: 10px;
 }
 
-button {
+.modal button {
     background-color: #b68c33;
     color: white;
     padding: 6px 16px;

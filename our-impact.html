@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Impact</title>
     <link rel="stylesheet" href="our-impact.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
     <!-- Swiper CSS -->
 
 
@@ -20,7 +22,7 @@
                     <a href="https://www.lodhagroup.com/" class="brandLogo">
                         <img src="./STAR/Bhadra.png" alt="Bhadra" class="logo">
                     </a>
-
+    
                 </div>
                 <div class="mobMenu">
                     <img class="search_img" src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
@@ -36,28 +38,167 @@
                         <li><a href="./our-story.html">OUR STORY</a></li>
                         <li><a href="./our-impact.html">OUR IMPACT</a></li>
                         <li class="innerMenu">
-                            <a href="#">OUR PROJECTS</a>
-                            <!-- <div class="innerMenuDiv">
-                                        <ul>
-                                            <li><a href="/projects/residential-property-in-worli/lodha-world-towers">Bhadra World
-                                                    Towers</a></li>
-                                            <li><a href="/projects/residential-property-in-andheri/lodha-cullinan">Lodha
-                                                    Cullinan</a></li>
-                                            <li><a href="/all-projects" class="goldenLineBtn">View all</a></li>
-                                        </ul>
-                                    </div> -->
+                            <a href="#" onclick="toggleDropdown(event)">OUR PROJECTS <span class="dropdown-icon"
+                                    onclick="toggleDropdown(event)">▼</span></a>
+                            <div class="innerMenuDiv">
+                                <div class="innerLinksList">
+                                    <div class="linksListWithSearch">
+                                        <div class="">
+                                            <!-- <img src="themes/lodhanew/images/svg/close.svg" alt="Closed"
+                                                        class="img-fluid closedMenu"> -->
+                                            <div class="innerListDiv">
+                                                <!-- Residential Links -->
+                                                <div class="innerLinksUl">
+                                                    <h6>Residential</h6>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-worli/lodha-world-towers.html"
+                                                                data-location="Mumbai" data-category="Residential"
+                                                                data-typology="3 Beds, 4 Beds" data-city="Mumbai"
+                                                                data-title="Lodha World Towers"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_274X342.jpg"
+                                                                data-projectid="a09D000000k1Cj0"
+                                                                data-possesion="Ready To Move In">
+                                                                Bhadra World Towers
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-andheri/lodha-cullinan.html"
+                                                                data-location="Mumbai" data-category="Residential"
+                                                                data-title="Lodha Cullinan"
+                                                                data-img="/sites/default/files/thumbnail/VSV-V01-Pool-HR-5_274x342.png"
+                                                                data-projectid="a09P3000001iMPFIA2"
+                                                                data-possesion="Under Construction">
+                                                                Bhadra Cullinan
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-matunga/lodha-vero.html"
+                                                                data-location="Mumbai" data-category="Residential"
+                                                                data-typology="3 Beds, 4 Beds" data-city="Mumbai"
+                                                                data-title="Lodha Vero"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_Lodha-Vero_274x342.png"
+                                                                data-projectid="a094G00003D9sFH"
+                                                                data-possesion="Under Construction">
+                                                                Bhadra Vero
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-thane/lodha-sterling.html"
+                                                                data-location="Thane" data-category="Residential"
+                                                                data-typology="2 Beds, 3 Beds, 4 Beds" data-city="Thane"
+                                                                data-title="Lodha Sterling"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_LodhaSterling_274x342.png"
+                                                                data-projectid="a09D000002Jv0jC"
+                                                                data-possesion="Ready To Move In">
+                                                                Bhadra Sterling
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="projects/residential-property-in-dombivli/lodha-golfview.html">
+                                                                Bhadra Golfview
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="projects/residential-property-in-bangalore/lodha-azur.html"
+                                                                data-location="Bangalore" data-category="Residential"
+                                                                data-typology="3 Beds, 4 Beds" data-city="Bangalore"
+                                                                data-title="Lodha Azur"
+                                                                data-img="/sites/default/files/thumbnail/Spotlight_Lodha-Azur_274x342.jpg"
+                                                                data-projectid="a09P3000002D75l">
+                                                                Bhadra Azur
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="all-projects.html"
+                                                                class="goldenLineBtn hoverWhite mt-1 noBeforeAfter"
+                                                                data-more="View all" data-cat="Residential"
+                                                                onclick="ourprojectclick()">
+                                                                View all
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+    
+                                                <!-- Commercial Links -->
+                                                <div class="innerLinksUl">
+                                                    <h6>Commercial</h6>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="commercial-offices.html">
+                                                                Offices
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="commercial-retail.html">
+                                                                Retail
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.lodhaindustrialandlogisticspark.com/"
+                                                                target="_blank">
+                                                                Warehousing
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.lodhaindustrialandlogisticspark.com/"
+                                                                target="_blank">
+                                                                Plots
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="commercial.html"
+                                                                class="goldenLineBtn hoverWhite mt-1 noBeforeAfter"
+                                                                data-more="View all" data-cat="Commercial"
+                                                                onclick="commercialviewallclick()">
+                                                                View all
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+    
+                                                <!-- Search Section -->
+                                                <div class="innerSearchDiv">
+                                                    <div class="searchDiv">
+                                                        <input type="text" placeholder="Search a project name or location"
+                                                            class="plsearch">
+                                                        <div class="searchButtonDiv">
+                                                            <!-- <img src="themes/lodhanew/images/svg/close.svg" alt="Search"
+                                                                        class="img-fluid closedBtn">
+                                                                    <img src="themes/lodhanew/images/svg/search.svg"
+                                                                        alt="Search" class="img-fluid searchBtn"> -->
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="serachAutofillDiv inner-search-result">
+                                                                <div class="swiper scrollVerticalSlider">
+                                                                    <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide" id="searchwres">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-scrollbar"></div>
+                                                                </div>
+                                                            </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
                         </li>
+    
                     </ul>
                     <ul class="staticlinksUl">
-                        <li><a href="#" class="enquire">ENQUIRE</a></li>
-                        <li><a href="tel:022-50030226" class="call">CALL</a></li>
-                        <li><a href="http://wa.me/+917718893537?text=Hi" class="chat" target="_blank">CHAT</a></li>
+                        <li><a href="#" class="enquire" id="openModal">ENQUIRE</a></li>
+                        <li><a href="http://wa.me/+917718893537?text=Hi" id="chatButton" class="chat"
+                                target="_blank">CHAT</a></li>
                         <li class="searchLi">
                             <a class="search" href="#">
                                 <img class="search_img"
                                     src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" alt="Search">
                                 SEARCH
-
+    
                             </a>
                         </li>
                     </ul>
@@ -79,16 +220,14 @@
     <section class="esgSec">
         <div class="esgSec-container">
             <div class="ContentText">
-                <h1 class="headingH1" data-aos="fade-up" data-aos-delay="100">Creating
-                    a positive impact</h1>
-                <p data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Lodha is committed to using our
-                    capabilities to create a positive impact on the environment and on society. As we grow, so does the
-                    scale of the impact we can make.</p>
-                <p data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">Through <strong><a
-                            href="/lodhafoundation">Bhadra Foundation</a></strong>, we implement transformative projects
-                    in Education, Women's Empowerment, and Sustainable Urbanization to create a positive impact on the
-                    environment and society. We are recognized in global sustainability indices and rankings for the
-                    work we do to address the environmental impact of the built environment.
+                <h1 class="headingH1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">Creating a Meaningful Impact</h1>
+                <p data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">At Bhadra, we are dedicated to leveraging our expertise to drive positive change for both the environment and society.
+                As we expand, so does our ability to make a lasting difference..</p>
+                <p data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">Through the <strong><a
+                            href="/lodhafoundation">Bhadra Foundation</a></strong>, we initiate transformative projects in education, women’s empowerment, and sustainable urban development, fostering
+                            growth and progress in communities. Our commitment to responsible development has earned us recognition in global
+                            sustainability indices, reinforcing our dedication to minimizing the environmental impact of the built environment and
+                            shaping a better future for all.
                 </p>
                 <div data-aos="fade-up" data-aos-delay="400" class="goldenBorderBtn">
                     <a href="/sites/default/files/2024-07/3rd_Integrated_Annual_Report.pdf" target="_blank"
@@ -122,7 +261,7 @@
                             by demonstrating that growth can be decoupled from increased emissions.</p>
 
                         <div class="itemBtn">
-                            <a href="https://www.lodhagroup.com/lodha-roadmap-to-net-zero" class="goldenBorderBtn">Know
+                            <a href="" class="goldenBorderBtn">Know
                                 More</a>
                         </div>
 
@@ -142,12 +281,12 @@
                     <div class="impact-item">
                         <img src="https://www.lodhagroup.com/sites/default/files/styles/customwebp/public/2024-07/Environmental-Impact-3.png.webp?itok=rYtquT5t"
                             alt="Net Zero Urban Accelerator">
-                        <p>The Lodha Net Zero Urban Accelerator, in partnership with US-based think tank RMI, is a
+                        <p>The Bhadra Net Zero Urban Accelerator, in partnership with US-based think tank RMI, is a
                             pioneering platform through
                             which we develop actionable initiatives in five key areas: Embodied Carbon, Passive Design
                             Solutions,</p>
                         <div class="itemBtn">
-                            <a href="https://www.lodhagroup.com/lodha-roadmap-to-net-zero" class="goldenBorderBtn">Know
+                            <a href="" class="goldenBorderBtn">Know
                                 More</a>
                         </div>
                     </div>
@@ -163,7 +302,7 @@
             <div class="ContentText">
                 <h2 class="headingH1">Social Impact</h2>
                 <p>
-                    Lodha is committed to creating a positive impact on Indian society through programmes which support
+                    Bhadra is committed to creating a positive impact on Indian society through programmes which support
                     the nation’s development. Our current areas of focus are Women’s Empowerment and Education.
                 </p>
             </div>
@@ -175,11 +314,11 @@
                             <img src="https://www.lodhagroup.com/sites/default/files/2024-09/Unnati_Our-Impact_374x269.jpg"
                                 alt="Unnati">
                             <p>
-                                Unnati, Lodha’s flagship Women’s Economic Empowerment initiative, champions and enables
+                                Unnati, Bhadra’s flagship Women’s Economic Empowerment initiative, champions and enables
                                 increased female participation in the formal workforce.
                             </p>
                             <div class="itemBtn">
-                                <a href="https://www.lodhagroup.com/lodha-roadmap-to-net-zero"
+                                <a href=""
                                     class="goldenBorderBtn">Know
                                     More</a>
                             </div>
@@ -189,12 +328,12 @@
                             <img src="https://www.lodhagroup.com/sites/default/files/2024-09/Lodha-Genius_Our-Impact_374x269.jpg"
                                 alt="Lodha Genius Programme">
                             <p>
-                                Lodha Genius Programme, in partnership with Ashoka University, is a fully-funded
+                                Bhadra Genius Programme, in partnership with Ashoka University, is a fully-funded
                                 scholarship that
                                 nurtures and inspires the nation’s brightest young minds.
                             </p>
                             <div class="itemBtn">
-                                <a href="https://www.lodhagroup.com/lodha-roadmap-to-net-zero"
+                                <a href=""
                                     class="goldenBorderBtn">Know
                                     More</a>
                             </div>
@@ -204,8 +343,8 @@
                             <img src="https://www.lodhagroup.com/sites/default/files/2024-09/Lodha-World-School_Our-Impact_374x269.jpg"
                                 alt="Lodha World School">
                             <p>
-                                Lodha is building the nation through access to quality education, with the Lodha
-                                World Schools, Lodha Oakwood School, and the Sri Ram Universal School.
+                                Bhadra is building the nation through access to quality education, with the Bhadra
+                                World Schools, Bhadra Oakwood School, and the Sri Ram Universal School.
                             </p>
                         </div>
                     </div>
@@ -283,24 +422,27 @@
             <p class="subtitle">Strategic partnerships to lead the change in the industry</p>
         </div>
         <div class="partnershipSwiper-container">
-    
+
             <div class="swiper-wrapper" id="partner">
                 <div class="swiper-item">
-                    <p class="swiper-text">Launched Lodha Net Zero Urban Accelerator in partnership with RMI in 2022</p>
+                    <p class="swiper-text">Bhadra is committed to driving innovation and sustainability in real estate through strategic collaborations. Our
+                    partnerships with leading organizations and initiatives help us accelerate the transition toward a net-zero built
+                    environment./p>
                 </div>
                 <div class="swiper-item">
-                    <p class="swiper-text">Part of Xynteo’s Build Ahead - a business-led coalition, dedicated to collectively tackling
-                    the challenge of achieving a net-zero built environment</p>
+                    <p class="swiper-text">This initiative focuses on pioneering solutions for sustainable urbanization. Through advanced technology and
+                    eco-conscious practices, we aim to create energy-efficient developments that redefine urban living.</p>
                 </div>
                 <div class="swiper-item">
-                    <p class="swiper-text">Signatory to WRI led business charter, value-chain approach to decarbonising the building and
-                    construction sector in India</p>
+                    <p class="swiper-text">As a signatory of this initiative, Bhadra adopts a value-chain approach to decarbonizing the building and construction
+                    sector in India. Our commitment to sustainable development drives us to implement environmentally responsible building
+                    solutions.</p>
                 </div>
-                
+
             </div>
             <div class="actionBtn">
                 <button class="nav-btn left-btn" onclick="scrollPartnership('left')"></button>
-    
+
                 <button class="nav-btn right-btn" onclick="scrollPartnership('right')"></button>
             </div>
         </div>
@@ -343,15 +485,15 @@
                     <img src="./STAR/Bhadra.jpg" alt="Bhadra">
                 </a>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/LodhaGroup/" target="_blank"><img
+                    <a href="https://www.facebook.com/" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/facebook.svg" alt="Facebook"></a>
-                    <a href="https://twitter.com/LODHA" target="_blank"><img
+                    <a href="https://twitter.com" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/twitter.svg" alt="Twitter"></a>
-                    <a href="https://www.instagram.com/lodhagroup_india/" target="_blank"><img
+                    <a href="https://www.instagram.com" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/insta.svg" alt="Instagram"></a>
-                    <a href="https://in.linkedin.com/company/lodha-group" target="_blank"><img
+                    <a href="https://in.linkedin.com/company" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/in.svg" alt="LinkedIn"></a>
-                    <a href="https://www.youtube.com/thelodhagroup" target="_blank"><img
+                    <a href="https://www.youtube.com/" target="_blank"><img
                             src="https://www.lodhagroup.com/themes/lodhanew/images/svg/youtube.svg" alt="YouTube"></a>
                 </div>
             </div>
@@ -430,7 +572,100 @@
         </div>
     </div>
 
+
+    <!-- Modal Form -->
+    <!-- Modal (Initially Hidden) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Request a call back</h2>
+
+            <form id="callbackForm">
+                <div class="formDiv">
+                    <input type="text" id="name" placeholder="Name*" required>
+                    <input type="email" id="email" placeholder="E-Mail ID*" required>
+
+                    <select id="country" required>
+                        <option value="India" selected>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                    </select>
+
+                    <select id="city" required>
+                        <option value="Mumbai" selected>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Kolkata</option>
+                    </select>
+
+                    <div class="phone-container">
+                        <input type="tel" id="phone" placeholder="+91 Enter Mobile Number*" required>
+                    </div>
+
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agree" required>
+                    <p for="agree">
+                        By checking this box, you agree to our <a href="#">Privacy Policy</a> and consent to be
+                        contacted with relevant updates.
+                    </p>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
     <script>
+
+    
+
+        function toggleMenu() {
+            const menu = document.querySelector(".linksDiv");
+            const burger = document.querySelector(".burgerMenu");
+
+            menu.classList.toggle("active");
+            burger.classList.toggle("open");
+        }
+
+        function toggleDropdown(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                const menuItem = event.target.closest(".innerMenu");
+                const dropdown = menuItem.querySelector(".innerMenuDiv");
+                const icon = menuItem.querySelector(".dropdown-icon");
+
+                // Close any other open dropdowns
+                document.querySelectorAll(".innerMenuDiv").forEach((menu) => {
+                    if (menu !== dropdown) {
+                        menu.classList.remove("dropdownActive");
+                        menu.closest(".innerMenu").querySelector(".dropdown-icon").classList.remove("rotate");
+                    }
+                });
+
+                // Toggle the clicked dropdown
+                dropdown.classList.toggle("dropdownActive");
+                icon.classList.toggle("rotate");
+            }
+
+
+
+            // Close dropdown when clicking outside
+            document.addEventListener("click", function (event) {
+                var innerMenu = document.querySelector(".innerMenu");
+                if (!innerMenu.contains(event.target) && !event.target.closest(".innerMenu > a")) {
+                    innerMenu.classList.remove("active");
+                }
+            });
+
         function toggleFooter() {
             var footer = document.getElementById("footerSection");
             var arrow = document.getElementById("toggleArrow");
@@ -455,18 +690,50 @@
             }
         }
 
-         function scrollPartnership(direction) {
-                const partner = document.getElementById("partner");
-                const scrollAmount = 300;
+        function scrollPartnership(direction) {
+            const partner = document.getElementById("partner");
+            const scrollAmount = 300;
 
-                if (direction === "left") {
-                    partner.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-                } else {
-                    partner.scrollBy({ left: scrollAmount, behavior: "smooth" });
-                }
+            if (direction === "left") {
+                partner.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+            } else {
+                partner.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            }
+        }
+
+
+
+        // Modal form javascript
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("myModal");
+            const openModalBtn = document.getElementById("openModal");
+            const closeModalBtn = document.querySelector(".close");
+
+            // Ensure modal is hidden when the page loads
+            modal.style.display = "none";
+
+            // Open Modal on "Enquire" Button Click
+            if (openModalBtn) {
+                openModalBtn.addEventListener("click", function () {
+                    modal.style.display = "flex";
+                });
             }
 
+            // Close Modal on Close Button Click
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+            }
 
+            // Close Modal When Clicking Outside Content
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
     </script>
 </body>
 
