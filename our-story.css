@@ -47,8 +47,8 @@ p {
 
 .linksDiv {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: start; */
+    justify-content: start;
     gap: 300px;
 
 }
@@ -315,21 +315,103 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    .linksDiv {
-        display: none;
-    }
-
     .row {
         justify-content: space-between;
+    }
+
+    .linksDiv {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        /* padding: 80px 10px 0 10px; */
+        z-index: 100;
+        font-size: 14px;
+    }
+
+    .linksDiv.active {
+        display: flex;
+    }
+
+    .linksUl {
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+        padding: 80px 10px 0 10px;
+    }
+
+    .linksUl li {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .linksUl a {
+        font-size: 18px;
+        color: white;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .staticlinksUl {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 10px;
+    }
+
+    .staticlinksUl a {
+        font-size: 16px;
+        color: white;
+        display: flex;
         align-items: center;
-        padding: 10px;
+        gap: 5px;
     }
 
-    .mobMenu {
-        display: flex !important;
-
+    .mobMenu,
+    .logoDiv {
+        display: flex;
+        z-index: 1000;
     }
 
+    .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1100;
+    }
+
+    .burgerMenu span {
+        width: 25px;
+        height: 3px;
+        background: #000;
+        filter: invert(1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Transform Burger Menu into Cross (X) when Active */
+    .burgerMenu.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burgerMenu.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burgerMenu.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
 
 .hero {
@@ -1410,19 +1492,18 @@ select {
 }
 
 .modal button {
-    background-color: #b68c33;
-    color: white;
-    padding: 6px 16px;
-    border: none;
+    color: #9D7F19;
+    padding: 12px 30px;
     cursor: pointer;
     font-size: 14px;
-    border-radius: 5px;
+    border: 1px solid #9D7F19;
+    ;
 }
 
 button:hover {
     background-color: #a07b2e;
+    color: white;
 }
-
 
 
 
